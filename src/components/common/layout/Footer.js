@@ -15,7 +15,7 @@ const Footer = () => (
               <a
                 target='_blank'
                 rel='noreferrer noopener'
-                href='https://www.vmware.com/'
+                href='https://www.fusionalb.cn/'
               >
                 VMware
               </a>
@@ -26,38 +26,38 @@ const Footer = () => (
               <a
                 target='_blank'
                 rel='noreferrer noopener'
-                href='https://github.com/spring-cloud/spring-cloud-dataflow'
+                href='https://github.com/fuslab/anyscale'
               >
                 <IconGithub className='github' />
               </a>
               <a
                 target='_blank'
                 rel='noreferrer noopener'
-                href='https://gitter.im/spring-cloud/spring-cloud-dataflow'
+                href='https://gitter.im/spring-cloud/anyscale'
               >
                 <IconGitter className='gitter' />
               </a>
               <a
                 target='_blank'
                 rel='noreferrer noopener'
-                href='https://stackoverflow.com/questions/tagged/spring-cloud-dataflow'
+                href='https://stackoverflow.com/questions/tagged/anyscale'
               >
                 <IconStackOverflow className='stackoverflow' />
               </a>
             </div>
             <div className='copyright'>
               <p>
-                © 2013-{new Date().getFullYear()} VMware, Inc. or its
+                © 2013-{new Date().getFullYear()} Fusionlab, Inc. or its
                 affiliates.
               </p>
-              <p>Spring Cloud Data Flow is under the Apache 2.0 license.</p>
+              <p>Anyscale is under the Apache 2.0 license.</p>
             </div>
             <ul>
               <li>
                 <a
                   target='_blank'
                   rel='noreferrer noopener'
-                  href='https://www.vmware.com/help/legal.html'
+                  href='https://www.fusionlab.cn/help/legal.html'
                 >
                   Terms of service
                 </a>
@@ -66,7 +66,7 @@ const Footer = () => (
                 <a
                   target='_blank'
                   rel='noreferrer noopener'
-                  href='https://www.vmware.com/help/privacy.html'
+                  href='https://www.fusionlab.cn/help/privacy.html'
                 >
                   Privacy
                 </a>

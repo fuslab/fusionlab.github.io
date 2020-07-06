@@ -53,7 +53,7 @@ export const getBreadcrumb = function getBreadcrumb(arr, page) {
         description: '',
         meta: {
           title: `Documentation ${version}`,
-          description: 'Spring Cloud Data Flow - Documentation',
+          description: 'Fusionlab Anyscale Project - Documentation',
           keywords: [],
         },
       })
@@ -72,7 +72,7 @@ export const getBreadcrumb = function getBreadcrumb(arr, page) {
       description: '',
       meta: {
         title: 'Documentation',
-        description: 'Spring Cloud Data Flow - Documentation',
+        description: 'Fusionlab Anyscale Project - Documentation',
         keywords: [],
       },
     })
@@ -83,8 +83,8 @@ export const getBreadcrumb = function getBreadcrumb(arr, page) {
   //   path: `/docs/${get(page, 'fields.version')}`,
   //   description: '',
   //   meta: {
-  //     title: 'Spring Cloud Data Flow Documentation',
-  //     description: 'Spring Cloud Data Flow Documentation',
+  //     title: 'Fusionlab Anyscale Project Documentation',
+  //     description: 'Fusionlab Anyscale Project Documentation',
   //     keywords: [],
   //   },
   // })
@@ -95,7 +95,7 @@ export const getBreadcrumb = function getBreadcrumb(arr, page) {
     description: '',
     meta: {
       title: 'Documentation',
-      description: 'Spring Cloud Data Flow Documentation',
+      description: 'Fusionlab Anyscale Project Documentation',
       keywords: [],
     },
   })

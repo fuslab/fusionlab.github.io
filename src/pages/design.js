@@ -3,9 +3,9 @@ import React from 'react'
 import { Layout } from '../components/common/layout'
 import { Seo } from '../components/common/seo'
 
-const GettingStartedPage = () => (
+const DesignPage = () => (
   <Layout className='page-getting-started'>
-    <Seo title='Getting Started' />
+    <Seo title='Design' />
     <div className='container'>
       <div className='layout-sidebars layout-2-sidebars'>
         <div className='sidebar'>
@@ -13,15 +13,19 @@ const GettingStartedPage = () => (
             <div className='box-title'>Learning</div>
             <ul>
               <li>
-                <a href='/docs/concepts/architecture/'>
-                  Data Flow Architecture
-                </a>
+                <a href='/docs/design/concept/'>Concept</a>
               </li>
               <li>
-                <a href='/docs/concepts/streams/'>Stream Concepts</a>
+                <a href='/docs/design/fql/'>SQL Layer</a>
               </li>
               <li>
-                <a href='/docs/concepts/batch-jobs/'>Batch Concepts</a>
+                <a href='/docs/design/core/'>Core Layer</a>
+              </li>
+              <li>
+                <a href='/docs/design/runtime/'>Runtime</a>
+              </li>
+              <li>
+                <a href='/docs/design/developer/'>Developer</a>
               </li>
               {/* <li>
                 <a href='/'>Pre-built Stream and Batch microservices.</a>
@@ -33,15 +37,15 @@ const GettingStartedPage = () => (
           <div className='main-content'>
             <h1>Getting started</h1>
             <p>
-              In order to use <strong>Anyscale</strong>, you will need to choose
+              In order to use <strong>FusionDB</strong>, you will need to choose
               what platform you want to run it on and install the server
               components on that platform.
             </p>
             <p>
-              <strong>Anyscale</strong> supports three platforms out of the box:{' '}
+              <strong>FusionDB</strong> supports three platforms out of the box:{' '}
               <strong>Local</strong>, <strong>Cloud Foundry</strong>, and{' '}
               <strong>Kubernetes</strong>. If you are new to{' '}
-              <strong>Data Flow</strong>, we recommend trying out Local for
+              <strong>FusionDB</strong>, we recommend trying out Local for
               simplicity to get comfortable with the concepts. Once you are
               ready to try it out on a platform, the guides for{' '}
               <strong>Cloud Foundry</strong> and <strong>Kubernetes</strong> are
@@ -73,8 +77,8 @@ const GettingStartedPage = () => (
             </ul>
             <h2>Developer Guides</h2>
             <p>
-              After installing <strong>Data Flow</strong> you will want to get
-              started deploying prebuilt microservices that Data Flow
+              After installing <strong>FusionDB</strong> you will want to get
+              started deploying prebuilt microservices that FusionDB
               orchestrates. Below are the guides on how to get started with both
               Stream and Batch processing.
             </p>
@@ -104,4 +108,4 @@ const GettingStartedPage = () => (
   </Layout>
 )
 
-export default GettingStartedPage
+export default DesignPage

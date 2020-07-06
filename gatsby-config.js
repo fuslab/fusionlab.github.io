@@ -2,14 +2,22 @@ const queries = require(`./utils/algolia-queries`)
 const versions = require('./content/versions.json')
 
 const siteMetadata = {
-  title: `Spring Cloud Data Flow`,
-  description: `Spring Cloud Data Flow puts powerful integration, batch and stream processing in the hands of the Java microservice developer`,
-  author: `@springcloud`,
-  siteUrl: `https://dataflow.spring.io`,
-  canonical: `https://dataflow.spring.io`,
-  twitter: `@springcloud`,
-  image: `https://dataflow.spring.io/images/card.jpg`,
-  keywords: [`spring`, `cloud`, `dataflow`],
+  title: `Anyscale project to Fusionlab`,
+  description: `A better open source unified analysis & sophon platform, one-stop solution & friendly developer`,
+  author: `@fusionlab`,
+  siteUrl: `https://fusionlab.cn`,
+  canonical: `https://fusionlab.cn`,
+  twitter: `@fusionlab`,
+  image: `https://fusionlab.cn/images/card.jpg`,
+  keywords: [
+    `anyscale`,
+    `cloud`,
+    `bigdata`,
+    `ambari-plus`,
+    `open source`,
+    `database`,
+    `FusionDB`,
+  ],
 }
 
 const arrVars = Object.keys(versions).map(versionId => {
@@ -182,7 +190,7 @@ const plugins = [
       background_color: `#45968f`,
       theme_color: `#45968f`,
       display: `minimal-ui`,
-      icon: `src/images/dataflow-icon.png`,
+      icon: `src/images/flab-icon.png`,
     },
   },
 ]
@@ -195,7 +203,7 @@ if (process.env.ALGOLIA_ADMIN_KEY) {
   plugins.push({
     resolve: `gatsby-plugin-algolia`,
     options: {
-      appId: `ZFB6X2VA6A`,
+      appId: `${process.env.GATSBY_ALGOLIA_APP_ID}`,
       apiKey: `${process.env.ALGOLIA_ADMIN_KEY}`,
       queries,
       chunkSize: 10000, // default: 1000

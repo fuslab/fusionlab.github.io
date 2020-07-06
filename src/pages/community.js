@@ -20,7 +20,7 @@ const CommunityPage = () => {
             <h1>Community</h1>
             <p>
               All our projects are hosted on{' '}
-              <a href='https://GitHub.com/spring-cloud/'>GitHub</a>
+              <a href='https://GitHub.com/anyscale/'>GitHub</a>
             </p>
             <p className='love'>
               We{' '}
@@ -34,29 +34,29 @@ const CommunityPage = () => {
           <div className='page-colset'>
             <article>
               <h2>
-                Spring Cloud <strong>Data Flow</strong>
+                Fusionlab Project <strong>Anyscale</strong>
               </h2>
               <p>
                 Microservice based Streaming and Batch data processing for Cloud
-                Foundry and Kubernetes
+                ECS and Kubernetes
               </p>
               <p className='social'>
                 <a
-                  href='https://github.com/spring-cloud/spring-cloud-dataflow'
+                  href='https://github.com/fuslab/anyscale'
                   target='_blank'
                   rel='noreferrer noopener'
                 >
                   <IconGithub />
                 </a>
                 <a
-                  href='https://gitter.im/spring-cloud/spring-cloud-dataflow'
+                  href='https://gitter.im/fuslab/anyscale'
                   target='_blank'
                   rel='noreferrer noopener'
                 >
                   <IconGitter />
                 </a>
                 <a
-                  href='https://stackoverflow.com/questions/tagged/spring-cloud-dataflow'
+                  href='https://stackoverflow.com/questions/tagged/anyscale'
                   target='_blank'
                   rel='noreferrer noopener'
                 >
@@ -66,29 +66,29 @@ const CommunityPage = () => {
             </article>
             <article>
               <h2>
-                Spring Cloud <strong>Stream</strong>
+                Core Data & Core AI <strong>Platform</strong>
               </h2>
               <p>
-                Event-driven Spring Boot microservices that communicate with one
-                another via messaging middleware
+                A better open source unified analysis platform, one-stop
+                solution & friendly developer.
               </p>
               <p className='social'>
                 <a
-                  href='https://github.com/spring-cloud/spring-cloud-stream'
+                  href='https://github.com/fuslab/anyscale'
                   target='_blank'
                   rel='noreferrer noopener'
                 >
                   <IconGithub />
                 </a>
                 <a
-                  href='https://gitter.im/spring-cloud/spring-cloud-stream'
+                  href='https://gitter.im/fuslab/anyscale'
                   target='_blank'
                   rel='noreferrer noopener'
                 >
                   <IconGitter />
                 </a>
                 <a
-                  href='https://stackoverflow.com/questions/tagged/spring-cloud-stream'
+                  href='https://stackoverflow.com/questions/tagged/anyscale'
                   target='_blank'
                   rel='noreferrer noopener'
                 >
@@ -133,33 +133,33 @@ const CommunityPage = () => {
           <div className='more'>
             <p>
               Several <strong>community members</strong> have made
-              implementations of Data Flow that deploy to other platforms.{' '}
+              implementations of Anyscale that deploy to other platforms.{' '}
               <strong>Thanks!</strong>
             </p>
             <p>
-              Discover Spring Cloud Dataflow for{' '}
+              Discover Anyscale Project for{' '}
               <a
                 target='_blank'
                 rel='noreferrer noopener'
-                href='https://github.com/donovanmuller/spring-cloud-dataflow-server-nomad'
+                href='https://github.com/fuslab/anyscale-package'
               >
-                HashiCorp Nomad
+                Anyscale Packages
               </a>
               ,{' '}
               <a
                 target='_blank'
                 rel='noreferrer noopener'
-                href='https://github.com/donovanmuller/spring-cloud-dataflow-server-openshift'
+                href='https://github.com/fuslab/ambari-plus'
               >
-                Red Hat OpenShift
+                Ambari Plus
               </a>
               ,{' '}
               <a
                 target='_blank'
                 rel='noreferrer noopener'
-                href='https://github.com/trustedchoice/spring-cloud-dataflow-server-mesos'
+                href='https://github.com/fuslab/anyscale-select'
               >
-                Apache Mesos
+                Anyscale Select
               </a>
               .
             </p>
@@ -182,7 +182,7 @@ const CommunityPage = () => {
                 </p>
                 <p>
                   <a
-                    href='https://github.com/spring-cloud/spring-cloud-dataflow/#workspaces/scdf-combined--573b0ae28867c41f233bb0f7/board?repos=39469487,52819699,45694880,96455695,72460646,52798744,52803867,126892412,143091335,126892627,47708564,73841717,179378165'
+                    href='https://github.com/FusionDB/fusiondb#workspaces/fusiondb-5d7f24f34def500001d114ce/board?repos=161803185,207344909,194885307'
                     className='button'
                   >
                     View the backlog
