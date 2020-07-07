@@ -55,7 +55,7 @@ module.exports = async ({ markdownAST, markdownNode }) => {
 
 /*
 
-"<!--TEMPLATE:https://raw.githubusercontent.com/spring-io/dataflow.spring.io/master/content/documentation/pages/8-markdown/template/_sample.md-->"
+"<!--TEMPLATE:https://raw.githubusercontent.com/fuslab/fusionlab.github.io/develop/content/documentation/pages/8-markdown/template/_sample.md-->"
 .replace('<!--TEMPLATE:', '')
 .replace('-->', '')
 

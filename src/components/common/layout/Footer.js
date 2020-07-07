@@ -17,7 +17,7 @@ const Footer = () => (
                 rel='noreferrer noopener'
                 href='https://www.fusionalb.cn/'
               >
-                VMware
+                Fusionlab
               </a>
             </span>
           </div>
@@ -33,7 +33,7 @@ const Footer = () => (
               <a
                 target='_blank'
                 rel='noreferrer noopener'
-                href='https://gitter.im/spring-cloud/anyscale'
+                href='https://gitter.im/fuslab/anyscale'
               >
                 <IconGitter className='gitter' />
               </a>

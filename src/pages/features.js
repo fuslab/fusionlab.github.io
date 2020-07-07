@@ -72,11 +72,10 @@ const FeaturesPage = () => (
             </article>
 
             <article>
-              <h2>VMware Data Products</h2>
+              <h2>Fusionlab Data Products</h2>
               <p>
-                Ready to connect with VMware Data Products including
-                Gemfire/Geode, PCC, GPDB, Pivotal RabbitMQ, Pivotal Redis,
-                Pivotal PostgreSQL, and Pivotal MySQL
+                Ready to connect with Fusionlab Data Products including
+                Anyscale, FusionDB and Ambari-plus
               </p>
             </article>
           </div>

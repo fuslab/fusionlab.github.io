@@ -20,7 +20,7 @@ const CommunityPage = () => {
             <h1>Community</h1>
             <p>
               All our projects are hosted on{' '}
-              <a href='https://GitHub.com/anyscale/'>GitHub</a>
+              <a href='https://GitHub.com/fuslab/'>GitHub</a>
             </p>
             <p className='love'>
               We{' '}
@@ -98,29 +98,28 @@ const CommunityPage = () => {
             </article>
             <article>
               <h2>
-                Spring Cloud <strong>Task</strong>
+                Fusionlab Project <strong>FsuionDB</strong>
               </h2>
               <p>
-                Short-lived Spring Boot microservices that stores task execution
-                information in a database
+		Fusiondb is a simple and powerful federated database engine
               </p>
               <p className='social'>
                 <a
-                  href='https://github.com/spring-cloud/spring-cloud-task'
+                  href='https://github.com/FusionDB/fusiondb'
                   target='_blank'
                   rel='noreferrer noopener'
                 >
                   <IconGithub />
                 </a>
                 <a
-                  href='https://gitter.im/spring-cloud/spring-cloud-task'
+                  href='https://gitter.im/FusionDB/fusiondb'
                   target='_blank'
                   rel='noreferrer noopener'
                 >
                   <IconGitter />
                 </a>
                 <a
-                  href='https://stackoverflow.com/questions/tagged/spring-cloud-task'
+                  href='https://stackoverflow.com/questions/tagged/fusiondb'
                   target='_blank'
                   rel='noreferrer noopener'
                 >
