@@ -10,7 +10,9 @@ const siteMetadata = {
   twitter: `@fusionlab`,
   image: `https://fusionlab.cn/images/card.jpg`,
   keywords: [
-    `anyscale`,
+    `CoreData`,
+    `CoreAI`,
+    `Anyscale`,
     `cloud`,
     `bigdata`,
     `ambari-plus`,

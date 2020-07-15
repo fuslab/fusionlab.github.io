@@ -41,9 +41,9 @@ const GettingStartedPage = () => (
               <strong>Anyscale</strong> supports three platforms out of the box:{' '}
               <strong>Local</strong>, <strong>Cloud Foundry</strong>, and{' '}
               <strong>Kubernetes</strong>. If you are new to{' '}
-              <strong>Anyscale CoreData & CoreAI</strong>, we recommend trying out Local for
-              simplicity to get comfortable with the concepts. Once you are
-              ready to try it out on a platform, the guides for{' '}
+              <strong>Anyscale CoreData & CoreAI</strong>, we recommend trying
+              out Local for simplicity to get comfortable with the concepts.
+              Once you are ready to try it out on a platform, the guides for{' '}
               <strong>Cloud Foundry</strong> and <strong>Kubernetes</strong> are
               here for you as well.
             </p>
@@ -73,10 +73,10 @@ const GettingStartedPage = () => (
             </ul>
             <h2>Developer Guides</h2>
             <p>
-              After installing <strong>Anyscale CoreData & CoreAI</strong> you will want to get
-              started deploying prebuilt microservices that Anyscale CoreData & CoreAI
-              orchestrates. Below are the guides on how to get started with both
-              Stream and Batch processing.
+              After installing <strong>Anyscale CoreData & CoreAI</strong> you
+              will want to get started deploying prebuilt microservices that
+              Anyscale CoreData & CoreAI orchestrates. Below are the guides on
+              how to get started with both Stream and Batch processing.
             </p>
             <ul className='block-links'>
               <li>

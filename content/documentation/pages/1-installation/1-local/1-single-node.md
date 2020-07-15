@@ -1,10 +1,10 @@
 ---
-path: 'installation/local/docker'
-title: 'Docker Compose'
-description: 'Installation using Docker Compose'
+path: 'installation/local/single-node'
+title: 'Single Node'
+description: 'Installation using Single Node'
 ---
 
-# Installing by Using Docker Compose
+# Installing by Using Single Node
 
 Spring Cloud Data Flow provides a Docker Compose file to let you quickly bring up Spring Cloud Data Flow, Skipper, MySQL and Apache Kafka.
 The additional [customization](%currentPath%/installation/local/docker-customize) guides help to extend the basic configuration, showing how to switch the binder to RabbitMQ, use different database, enable monitoring more.

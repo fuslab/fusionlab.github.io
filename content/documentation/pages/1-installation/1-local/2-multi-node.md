@@ -1,10 +1,10 @@
 ---
-path: 'installation/local/docker-customize'
-title: 'Docker Compose Customization'
-description: 'Customize the Docker Compose installation'
+path: 'installation/local/multi-node'
+title: 'Multi Node'
+description: 'Installation using Multi Node'
 ---
 
-# Customizing Docker Compose
+# Installing by Using Multi Node
 
 The Docker Compose [installation](%currentPath%/installation/local/docker) guide explains how to use the [docker-compose.yml](https://raw.githubusercontent.com/spring-cloud/spring-cloud-dataflow/%github-tag%/spring-cloud-dataflow-server/docker-compose.yml) for installing `Data Flow`, `Skipper`, `Kafka` and `MySQL`.
 You can extend this basic configuration with the help of the provided extension docker-compose files.

@@ -100,9 +100,7 @@ const CommunityPage = () => {
               <h2>
                 Fusionlab Project <strong>FsuionDB</strong>
               </h2>
-              <p>
-		Fusiondb is a simple and powerful federated database engine
-              </p>
+              <p>Fusiondb is a simple and powerful federated database engine</p>
               <p className='social'>
                 <a
                   href='https://github.com/FusionDB/fusiondb'
