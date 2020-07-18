@@ -1,7 +1,7 @@
 ---
 path: 'installation/cloudfoundry/cf-cli'
 title: 'Cloud Foundry CLI'
-description: 'Install using the Cloud Foundry CLI'
+description: 'Install using the Cloud CLI'
 ---
 
 # Cloud Foundry Installation

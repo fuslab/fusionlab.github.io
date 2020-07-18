@@ -1,10 +1,10 @@
 ---
-path: 'installation/cloudfoundry/'
-title: 'Cloud Foundry'
-description: 'Data Flow Cloud Foundry Installation Guide'
+path: 'installation/cloud/'
+title: 'Cloud'
+description: 'Anyscale Stack Cloud Installation Guide'
 summary: true
 ---
 
-# Cloud Foundry
+# Cloud
 
-This section shows you how to install **Data Flow** on **Cloud Foundry**.
+This section shows you how to install **Anyscale Stack** on **Cloud**.

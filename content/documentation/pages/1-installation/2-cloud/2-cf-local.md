@@ -1,7 +1,7 @@
 ---
 path: 'installation/cloudfoundry/cf-local'
 title: 'Running locally'
-description: 'Configure the local servers to deploy to Cloud Foundry'
+description: 'Configure the local servers to deploy to Cloud'
 ---
 
 # Running locally Cloud Foundry
