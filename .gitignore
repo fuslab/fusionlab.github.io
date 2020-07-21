@@ -12,3 +12,5 @@ content/files/ext/
 cloud-foundry/public
 .deploy_git
 setting-env.sh
+
+yarn.lock
