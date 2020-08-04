@@ -63,7 +63,7 @@ class Header extends React.Component {
               <Link to='/'>
                 <Logo />
                 <span>
-                  Fusinlab Project <strong> Anyscale </strong>
+                  Fusionlab <strong> Project </strong>
                 </span>
               </Link>
             </div>

@@ -9,11 +9,11 @@ const NewsPage = data => {
   const edges = data.data.pages.edges
   return (
     <Layout className='page-news'>
-      <Seo title='Announcements' />
+      <Seo title='博客' />
       <div className='container'>
         <div className='layout-basic'>
           <div className='title-news page-title'>
-            <h1>Announcements</h1>
+            <h1>博客</h1>
           </div>
           <div className='news-list'>
             <List items={edges} />

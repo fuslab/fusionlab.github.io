@@ -90,8 +90,8 @@ class Navigation extends React.Component {
                 ) : (
                   <div className='search'>
                     <InstantSearch
-                      appId='QP10ON5QT2'
-                      apiKey='d050683a0f89eeb496e7392a8bb8648a'
+                      appId='JK0HGL754F'
+                      apiKey='f5a1e5d37a41387b4e848dfd4efc631b'
                       indexName={`doc-${version}`}
                     >
                       <Configure attributesToSnippet='html' />

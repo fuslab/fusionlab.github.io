@@ -42,39 +42,36 @@ const FeaturesPage = () => (
     <div className='container'>
       <div className='layout-basic'>
         <div className='page-title'>
-          <h1>Features</h1>
+          <h1>特性</h1>
         </div>
 
         <div className='colset'>
           <div className='col'>
             <article>
-              <h2>Security</h2>
+              <h2>One-stop</h2>
               <p>
-                Standardized on OAuth2 and OpenID Connect for secure
-                authentication and authorization semantics.
+                一体化 & 简单 & 易用。
               </p>
             </article>
 
             <article>
-              <h2>Continuous Delivery</h2>
+              <h2>高性能</h2>
               <p>
-                Upgrade and rollback streaming data pipelines with zero downtime
-                and no data loss
+                万亿数据秒级响应，提供PB级数据存储。
               </p>
             </article>
 
             <article>
-              <h2>Prebuilt Components</h2>
+              <h2>扩展性</h2>
               <p>
-                Select from over 60 prebuilt applications to kick start the
-                solution for your use-case.
+                规模化部署，上千台集群规模。
               </p>
             </article>
 
             <article>
-              <h2>Fusionlab Data Products</h2>
+              <h2>Fusionlab 数据产品</h2>
               <p>
-                Ready to connect with Fusionlab Data Products including
+                准备好连接 Fusionlab 数据产品
                 Anyscale, FusionDB and Ambari-plus
               </p>
             </article>
@@ -82,51 +79,47 @@ const FeaturesPage = () => (
 
           <div className='col'>
             <article>
-              <h2>Programming Model</h2>
+              <h2>可视化</h2>
               <p>
-                Build streaming and batch applications using Spring Cloud Stream
-                and Spring Cloud Task projects. Choose from several event-driven
-                programming models: Channels, Java 8 Functional, and Kafka
-                Streams.
+                可视化数据收集、存储、分析、数据报表。
               </p>
             </article>
             <article>
-              <h2>Polyglot</h2>
+              <h2>可靠性</h2>
               <p>
-                Develop using Kafka Streams, Python, .NET, or other programming
-                model primitives
+                集群提供副本容错机制，硬件故障不会造成数据丢失。
               </p>
             </article>
             <article>
-              <h2>Pluggable Message Broker</h2>
+              <h2>简单运维</h2>
               <p>
-                Use the same application code and bind to your preferred message
-                broker. Support for RabbitMQ, Apache Kafka, Kafka Streams,
-                Amazon Kinesis, Google Pub/Sub, Solace PubSub+, Azure Event
-                Hubs, or RocketMQ
+                日志、监控、报警、配置、服务一栈式管理。
               </p>
             </article>
           </div>
           <div className='col'>
             <article>
-              <h2>Manage Spring Batch Jobs</h2>
+              <h2>简单易用</h2>
               <p>
-                Use the Dashboard to manage the execution of Batch Jobs. You can
-                view the detailed status report and restart the failed jobs.
+                提供标准 SQL，拖拽式数据分析。
               </p>
             </article>
             <article>
-              <h2>Batch Jobs as a Connected Graph</h2>
+              <h2>数据闭环</h2>
               <p>
-                Use the Dashboard to design the large-scale and
-                compute-intensive batch data pipeline
+                Load Data -> SQL Analysis -> Save Data
               </p>
             </article>
             <article>
-              <h2>Schedule Batch Jobs</h2>
+              <h2>多云协作</h2>
               <p>
-                Integration with Cloud Foundry and Kubernetes scheduler
-                components.
+                多云协作、分析、处理数据，例如：S3、ADLS、GCP、OSS等
+              </p>
+            </article>
+            <article>
+              <h2>ALL in SQL & SQL for Everyone</h2>
+              <p>
+                连接一切，数据在流动中被处理。
               </p>
             </article>
           </div>
