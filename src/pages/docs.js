@@ -76,6 +76,15 @@ class DocsPage extends React.Component {
         },
         {},
       ],
+      [
+        {
+          id: 'sql-guides',
+          title: get(edges, 'edges[9].node.frontmatter.title'),
+          description: get(edges, 'edges[9].node.frontmatter.description'),
+          path: get(edges, 'edges[9].node.fields.path'),
+        },
+        {},
+      ]
     ]
     return (
       <Layout className='page-doc' version={currentVersion}>

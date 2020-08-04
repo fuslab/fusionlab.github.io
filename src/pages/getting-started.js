@@ -14,7 +14,7 @@ const GettingStartedPage = () => (
             <ul>
               <li>
                 <a href='/docs/concepts/architecture/'>
-                  Anyscale CoreData & CoreAI Architecture
+                  架构
                 </a>
               </li>
               <li>
@@ -22,6 +22,9 @@ const GettingStartedPage = () => (
               </li>
               <li>
                 <a href='/docs/concepts/batch-jobs/'>Batch Concepts</a>
+              </li>
+               <li>
+                <a href='/docs/concepts/sql/'>SQL Concepts</a>
               </li>
               {/* <li>
                 <a href='/'>Pre-built Stream and Batch microservices.</a>
@@ -31,28 +34,25 @@ const GettingStartedPage = () => (
         </div>
         <div className='main'>
           <div className='main-content'>
-            <h1>Getting started</h1>
+            <h1>快速入门</h1>
             <p>
-              In order to use <strong>Anyscale</strong>, you will need to choose
-              what platform you want to run it on and install the server
-              components on that platform.
+            企业级 <strong> Core Data & Core AI </strong> 统一分析平台（Anyscale Unify Analysis Platform），分析流动中的数据。Anyscale 并不是一个框架，而是一套完整的解决方案。
             </p>
             <p>
-              <strong>Anyscale</strong> supports three platforms out of the box:{' '}
-              <strong>Local</strong>, <strong>Cloud Foundry</strong>, and{' '}
-              <strong>Kubernetes</strong>. If you are new to{' '}
-              <strong>Anyscale CoreData & CoreAI</strong>, we recommend trying
-              out Local for simplicity to get comfortable with the concepts.
-              Once you are ready to try it out on a platform, the guides for{' '}
-              <strong>Cloud Foundry</strong> and <strong>Kubernetes</strong> are
-              here for you as well.
+              <strong>Anyscale</strong> 支持运行在多种平台中:{' '}
+              <strong>Local</strong>, <strong>Cloud</strong>, and{' '}
+              <strong>Kubernetes</strong>。 我们推荐运行{' '}
+              <strong>Anyscale CoreData & CoreAI</strong>, 于本地数据中心，这是经过验证的成熟方案。
+              Anyscale 运行在多种平台一直是我们努力的目标，未来我们会持续优化我们的架构，使得 Anyscale 
+              能够简单 & 可靠的运行在 {' '}
+              <strong>Cloud</strong> 和 <strong>Kubernetes</strong> 平台中。
             </p>
 
             <ul className='block-links'>
               <li>
                 <a href='/docs/installation/local/' className='local'>
-                  Installation
-                  <strong>Local machine</strong>
+                  安装
+                  <strong>Local</strong>
                 </a>
               </li>
               <li>
@@ -60,23 +60,20 @@ const GettingStartedPage = () => (
                   href='/docs/installation/cloudfoundry/'
                   className='cloudfoundry'
                 >
-                  Installation
-                  <strong>Cloud Foundry</strong>
+                  安装
+                  <strong>Cloud</strong>
                 </a>
               </li>
               <li>
                 <a href='/docs/installation/kubernetes/' className='kubernetes'>
-                  Installation
+                  安装
                   <strong>Kubernetes</strong>
                 </a>
               </li>
             </ul>
-            <h2>Developer Guides</h2>
+            <h2>开发指南</h2>
             <p>
-              After installing <strong>Anyscale CoreData & CoreAI</strong> you
-              will want to get started deploying prebuilt microservices that
-              Anyscale CoreData & CoreAI orchestrates. Below are the guides on
-              how to get started with both Stream and Batch processing.
+              安装 <strong>Anyscale</strong> 之后，您将要开启您的应用构建之旅，如下是关于您如何使用 Stream 、Batch 、SQL 构建企业数据流的入门指南。
             </p>
             <ul className='block-links'>
               <li>
@@ -94,6 +91,14 @@ const GettingStartedPage = () => (
                   className='batch-processing'
                 >
                   <strong>Batch</strong> Processing
+                </a>
+              </li>
+                <li>
+                <a
+                  href='/docs/sql-developer-guides/getting-started/sql/'
+                  className='batch-processing'
+                >
+                  <strong>SQL</strong> Processing
                 </a>
               </li>
             </ul>
