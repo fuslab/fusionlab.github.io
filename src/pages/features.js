@@ -50,21 +50,21 @@ const FeaturesPage = () => (
             <article>
               <h2>One-stop</h2>
               <p>
-                一体化 & 简单 & 易用。
+                一体化 & 简单 & 易用 & 云原生 & 分布式。
               </p>
             </article>
 
             <article>
               <h2>高性能</h2>
               <p>
-                万亿数据秒级响应，提供PB级数据存储。
+                实时写入，万亿数据秒级响应，融合计算。
               </p>
             </article>
 
             <article>
               <h2>扩展性</h2>
               <p>
-                规模化部署，上千台集群规模。
+                存储计算弹性伸缩，上千台集群规模，提供PB级数据存储。
               </p>
             </article>
 
@@ -119,7 +119,7 @@ const FeaturesPage = () => (
             <article>
               <h2>ALL in SQL & SQL for Everyone</h2>
               <p>
-                连接一切，数据在流动中被处理。
+                连接一切，Mixed Engine 多模态数据统一管理
               </p>
             </article>
           </div>
