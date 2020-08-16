@@ -1,10 +1,10 @@
 ---
-path: 'installation/cloudfoundry/cf-cli'
-title: 'Cloud Foundry CLI'
+path: 'installation/cloud/cf-cli'
+title: 'Cloud CLI'
 description: 'Install using the Cloud CLI'
 ---
 
-# Cloud Foundry Installation
+# Cloud Installation
 
 This section covers how to install Spring Cloud Data Flow on Cloud Foundry.
 

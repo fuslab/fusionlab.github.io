@@ -4,107 +4,53 @@ title: 'Manual'
 description: 'Manual installation'
 ---
 
-# Manual Installation
+# 入门指南
 
-If Docker does not suit your needs, you can manually install the parts you need to run Spring Cloud Data Flow.
+## 数据可视化
 
-NOTE: If you want to use Spring Cloud Data Flow only for batch and task processing (that is, not for processing streams), see the [Batch-only Mode recipe](%currentPath%/recipes/batch/batch-only-mode).
+数据可视化，由一个现代化的企业级商业智能 Web 应用程序 Superset 提供服务。
 
-## Downloading Server Jars
+提供丰富的数据可视化集，一个易于使用的界面，用于探索和可视化数据。
 
-To begin, you need to download the server jars. To do so:
+高度可定制化数据可视化工具。
 
-1. Download the [Spring Cloud Data Flow Server](https://spring.io/projects/spring-cloud-dataflow) and shell by using the following commands:
+推荐的数据库连接软件包：
 
-   ```bash
-   wget https://repo.spring.io/%spring-maven-repo-type%/org/springframework/cloud/spring-cloud-dataflow-server/%dataflow-version%/spring-cloud-dataflow-server-%dataflow-version%.jar
-   wget https://repo.spring.io/%spring-maven-repo-type%/org/springframework/cloud/spring-cloud-dataflow-shell/%dataflow-version%/spring-cloud-dataflow-shell-%dataflow-version%.jar
-   ```
+| database   |             pypi package              |   SQLAlchemy URI prefix   |
+| :--------- | :-----------------------------------: | :-----------------------: |
+| MySQL      |        pip install mysqlclient        |         mysql://          |
+| Postgres   |         pip install psycopg2          |  postgresql+psycopg2://   |
+| Presto     |          pip install pyhive           |         presto://         |
+| Oracle     |         pip install cx_Oracle         |         oracle://         |
+| sqlite     |            default support            |         sqlite://         |
+| Redshift   |    pip install sqlalchemy-redshift    |   redshift+psycopg2://    |
+| MSSQL      |          pip install pymssql          |         mssql://          |
+| Impala     |          pip install pyhive           |       jdbc+hive://        |
+| SparkSQL   |    pip install sqlalchemy-redshift    |   redshift+psycopg2://    |
+| Greenplum  |         pip install psycopg2          |  postgresql+psycopg2://   |
+| Athena     |   pip install "PyAthenaJDBC>1.0.9"    |     awsathena+jdbc://     |
+| Vertica    | pip install sqlalchemy-vertica-python | vertica+vertica_python:// |
+| ClickHouse |   pip install sqlalchemy-clickhouse   |       clickhouse://       |
+| Kylin      |          pip install kylinpy          |         kylin://          |
 
-2. Download [Skipper](https://cloud.spring.io/spring-cloud-skipper/) by running the following command:
-   ```bash
-   wget https://repo.spring.io/%spring-maven-repo-type%/org/springframework/cloud/spring-cloud-skipper-server/%skipper-version%/spring-cloud-skipper-server-%skipper-version%.jar
-   ```
+目前 JDP Package 提供的 Superset 安装包，默认支持`MySQL`、`Postgres`、`Presto`、`sqlite`、`Impala`、`SparkSQL`、`Greenplum`、`ClickHouse`。
 
-<!--NOTE-->
+Ambari 管理 Superset 界面提供`Quick Links`，访问 Superset databaseview，配置`数据源` -> `数据库`添加 ClickHouse DataSource，格式如下：
 
-If you're interested in trying out the latest `BUILD-SNAPSHOT` (aka: snapshot build from the `master` branch) of SCDF and Skipper's upstream versions, please use the following `wget` commands.
+- ClickHouse
+  - 连接地址：clickhouse://admin:admin@clickhouse_host_address:8123/default
+  - 用户名：admin # 默认 JDP
+  - 密码：amdin # 默认 JDP
 
-```bash
-wget https://repo.spring.io/%spring-maven-repo-type%/org/springframework/cloud/spring-cloud-dataflow-server/%dataflow-version%/spring-cloud-dataflow-server-%dataflow-version%.jar
-wget https://repo.spring.io/%spring-maven-repo-type%/org/springframework/cloud/spring-cloud-dataflow-shell/%dataflow-version%/spring-cloud-dataflow-shell-%dataflow-version%.jar
-```
+> 注：`ClickHouse`集群，默认还提供只读用户`ck/admin`。
 
-```bash
-wget https://repo.spring.io/%spring-maven-repo-type%/org/springframework/cloud/spring-cloud-skipper-server/%skipper-version%/spring-cloud-skipper-server-%skipper-version%.jar
-```
+- MySQL
+  - 连接地址：mysql://user:password@your_mysql_address:3306/database
+  - 用户名：user
+  - 密码： password
 
-<!--END_NOTE-->
+## Screenshots
 
-## Install Messaging Middleware
-
-These instructions require that RabbitMQ be running on the same machine as Skipper, Spring Cloud Data Flow server, and Shell.
-
-To install and run the RabbitMQ docker image, use the following command:
-
-```bash
-docker run -d --hostname rabbitmq --name rabbitmq -p 15672:15672 -p 5672:5672 rabbitmq:3.7.14-management
-```
-
-## Starting Server Jars
-
-Now you need to start the applications that comprise the server. To do so:
-
-1. Start Skipper. To do so, in the directory where you downloaded Skipper, run the server by using `java -jar`, as follows:
-
-   ```bash
-   java -jar spring-cloud-skipper-server-%skipper-version%.jar
-   ```
-
-1. Start the Data Flow Server. To do so, in a different terminal window and in the directory where you downloaded Data Flow, run the server by using `java -jar`, as follows:
-
-   ```bash
-   java -jar spring-cloud-dataflow-server-%dataflow-version%.jar
-   ```
-
-   If Skipper and the Data Flow server are not running on the same
-   host, set the `spring.cloud.skipper.client.serverUri` configuration
-   property to the location of Skipper, as shown in the following
-   example:
-
-   ```bash
-   java -jar spring-cloud-dataflow-server-%dataflow-version%.jar --spring.cloud.skipper.client.serverUri=https://192.51.100.1:7577/api
-   ```
-
-1. If you want to use the Spring Cloud Data Flow shell, start it with the following command:
-
-   ```bash
-   java -jar spring-cloud-dataflow-shell-%dataflow-version%.jar
-   ```
-
-   If the Data Flow Server and shell are not running on the same host, you can also point the shell to the Data Flow server URL by using the `dataflow config server` command in Shell, as the following example shows:
-
-   ```bash
-    server-unknown:>dataflow config server https://198.51.100.0
-    Successfully targeted https://198.51.100.0
-   ```
-
-   Alternatively, you can pass in the `--dataflow.uri` command line option. The shell’s `--help` command line option shows what is available.
-
-<!--TIP-->
-
-**Proxy Servers**
-
-If you run Spring Cloud Data Flow Server behind a proxy server (such
-as [Zuul](https://github.com/Netflix/zuul)), you may also need to set
-the `server.use-forward-headers` property to `true`. An example that
-uses Zuul is available in the [Spring Cloud Data Flow Samples
-repository](https://github.com/spring-cloud/spring-cloud-dataflow-samples/tree/master/dataflow-zuul)
-on GitHub. Additional information is also available in the [Spring Boot Reference Guide](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#howto-use-tomcat-behind-a-proxy-server).
-
-<!--END_TIP-->
-
-## Accessing Data Flow Dashboard
-
-You can now navigate to Spring Cloud Data Flow Dashboard. In your browser, navigate to the [Spring Cloud Data
-Flow Dashboard URL](http://localhost:9393/dashboard).
+<img src="images/superset_screenshots_1.gif" alt="superset screenshots" width="765"/>
+<img src="images/superset_screenshots_2.gif" alt="superset screenshots" width="765"/>
+<img src="images/superset_screenshots_3.gif" alt="superset screenshots" width="765"/>

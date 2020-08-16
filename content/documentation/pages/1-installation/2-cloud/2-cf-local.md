@@ -1,5 +1,5 @@
 ---
-path: 'installation/cloudfoundry/cf-local'
+path: 'installation/cloud/cf-local'
 title: 'Running locally'
 description: 'Configure the local servers to deploy to Cloud'
 ---

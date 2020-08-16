@@ -7,4 +7,4 @@ summary: true
 
 # Getting Started
 
-This section shows how to create a Spring Batch data pipeline with an existing Spring Cloud Task application and use Spring Cloud Data Flow to deploy it.
+Fusiondb is a simple and powerful federated database engine.
