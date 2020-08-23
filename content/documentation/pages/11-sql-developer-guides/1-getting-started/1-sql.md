@@ -13,7 +13,7 @@ FusionDB 提供两种安装模式：
 
 [Docker 安装请参阅](https://github.com/FusionDB/fql-training)
 
-[Anyscale 可视化安装参阅](http://www.fusionlab.cn/zh-cn/docs/intro/quickstart.html)
+[Anyscale 可视化安装参阅](https://www.fusiondb.cn/docs/installation/local/multi-node/)
 
 ## 快速访问
 

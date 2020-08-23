@@ -66,4 +66,6 @@ FusionDB 提供流数据与 Batch 数据处理，处理结果可以 Save 到 Cli
 
 Core AI 核心功能：
 
-> 待续。。。
+![image](images/anyscale-runtime-architecture.png)
+
+> 时间关系，此功能一直是 plan 中，优先级不高，资源更多集中在 FusionDB，待续。。。
