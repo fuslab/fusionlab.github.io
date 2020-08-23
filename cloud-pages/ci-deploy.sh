@@ -1,12 +1,16 @@
 ## yarn build & generate static website
-yarn build
+npm install yarn # install yarn
+yarn install # yarn install
+yarn run fix # Fix linting errors
+yarn run lint # Linter
+yarn build # yarn build
 
 ## git clone & commit & push
 git clone git@github.com:FusionDB/fusionlab.github.io.git .deploy_git
 
 cd .deploy_git/
 
-git pull origin master
+git pull origin gh-pages
 
 ## Deploying: git
 
@@ -25,4 +29,4 @@ git add .
 
 git commit -m "Site updated: $(date '+%Y-%m-%d %H:%M:%S')"
 
-git push -f origin master
+git push -f origin gh-pages

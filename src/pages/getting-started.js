@@ -61,10 +61,7 @@ const GettingStartedPage = () => (
                 </a>
               </li>
               <li>
-                <a
-                  href='/docs/installation/cloudfoundry/'
-                  className='cloudfoundry'
-                >
+                <a href='/docs/installation/cloud/' className='cloudfoundry'>
                   安装
                   <strong>Cloud</strong>
                 </a>

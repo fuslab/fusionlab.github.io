@@ -1,3 +1,5 @@
+![github pages](https://github.com/FusionDB/fusiondb.github.io/workflows/github%20pages/badge.svg)
+
 <p align="center">
   <a href="https://www.fusiondb.cn">
     <img alt="FusionDB Dashboard" title="FusionDB Website" src="http://www.fusiondb.cn/images/card.jpg" width="450">
